@@ -1,23 +1,67 @@
 {
   "name": "autoreadme",
   "displayName": "AutoReadME",
-  "description": "AI-powered README generator with guided input",
+  "description": "AI-powered README generator with guided input for VSCode",
   "version": "0.0.1",
+  "publisher": "dhtapp",
+  "author": {
+    "name": "dhtapp",
+    "url": "https://github.com/dhtapp"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dhtapp/autoreadme-vscode-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dhtapp/autoreadme-vscode-extension/issues"
+  },
+  "homepage": "https://github.com/dhtapp/autoreadme-vscode-extension#readme",
+  "keywords": [
+    "readme",
+    "generator",
+    "documentation",
+    "markdown",
+    "ai",
+    "productivity",
+    "developer-tools"
+  ],
   "engines": {
     "vscode": "^1.103.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Snippets",
+    "Formatters"
   ],
   "activationEvents": [],
   "main": "./dist/extension.js",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
   "contributes": {
     "commands": [
       {
         "command": "autoreadme.generateReadme",
-        "title": "Generate README"
+        "title": "Generate README",
+        "category": "AutoReadME"
       }
-    ]
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "autoreadme.generateReadme",
+          "when": "explorerResourceIsFolder"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "autoreadme.generateReadme"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",

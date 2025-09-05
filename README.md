@@ -1,71 +1,251 @@
-# autoreadme README
+# AutoReadME
 
-This is the README for your extension "autoreadme". After writing up a brief description, we recommend including the following sections.
+*AI-powered README generator with guided input for VSCode*
 
-## Features
+> Transform your project documentation with intelligent README generation that understands your codebase and guides you through creating professional documentation.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+[![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
-For example if there is an image subfolder under your extension project workspace:
+## ✨ Vision
 
-\!\[feature X\]\(images/feature-x.png\)
+AutoReadME revolutionizes how developers create project documentation. Instead of staring at a blank README file, our extension provides an intelligent, guided experience that analyzes your project and helps you craft professional documentation that actually gets read.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## 🎯 Why AutoReadME?
 
-## Requirements
+**The Problem:** Most developers either skip writing READMEs or create generic, unhelpful documentation that doesn't serve users or contributors.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+**Our Solution:** An interactive VSCode extension that:
+- 🔍 **Analyzes your project** automatically (detects React, Flutter, Python, etc.)
+- 🎨 **Guides you through creation** with smart questionnaires
+- 📝 **Generates professional READMEs** tailored to your audience and project type
+- 🚀 **Saves hours of writing** while improving documentation quality
 
-## Extension Settings
+## 🏗️ How It Works
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### Smart Project Analysis
+AutoReadME automatically detects:
+- **Project Type**: Mobile app, web application, developer tool, API service
+- **Technology Stack**: React, Flutter, Python, Node.js, Rust, and more
+- **Framework Detection**: Next.js, Express, Vue.js, etc.
+- **Configuration Files**: Reads package.json, pubspec.yaml, requirements.txt
 
-For example:
+### Guided Documentation Creation
+Interactive questionnaire that adapts based on your project:
+1. **Project Context** - Pre-filled from your codebase analysis
+2. **Target Audience** - End users, developers, business stakeholders
+3. **README Style** - Business-focused, technical, user-friendly, or marketing
+4. **Detail Level** - Brief, standard, comprehensive, or professional
 
-This extension contributes the following settings:
+### Intelligent Content Generation
+Creates README sections tailored to your choices:
+- **Vision & Mission** statements for business projects
+- **Multi-user perspectives** for SaaS applications
+- **Installation instructions** specific to your tech stack
+- **Usage examples** with proper code snippets
+- **Contributing guidelines** matching your audience
+- **Professional formatting** with badges and visual elements
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## 🚀 Installation
 
-## Known Issues
+### From VSCode Marketplace
+1. Open VSCode
+2. Go to Extensions (`Ctrl+Shift+X` / `Cmd+Shift+X`)
+3. Search for "AutoReadME"
+4. Click **Install**
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+### From Source
+```bash
+# Clone the repository
+git clone https://github.com/dhtapp/autoreadme-vscode-extension.git
+cd autoreadme-vscode-extension
 
-## Release Notes
+# Install dependencies
+npm install
 
-Users appreciate release notes as you update your extension.
+# Build the extension
+npm run compile
 
-### 1.0.0
+# Package the extension (optional)
+npm run package
+```
 
-Initial release of ...
+## 📖 Usage
 
-### 1.0.1
+### Quick Start
+1. **Open your project** in VSCode
+2. **Open Command Palette** (`Ctrl+Shift+P` / `Cmd+Shift+P`)
+3. **Type "Generate README"** and select the command
+4. **Follow the guided prompts** - AutoReadME will analyze your project first
+5. **Review and save** your generated README
 
-Fixed issue #.
+### Alternative Methods
+- **Right-click** any folder in Explorer → "Generate README"
+- **Use the Command Palette** → "AutoReadME: Generate README"
 
-### 1.1.0
+### Example Workflow
+```
+🔍 AutoReadME analyzes your Flutter project...
+📱 Detected: Dart/Flutter with mobile app structure
 
-Added features X, Y, and Z.
+❓ What type of project is this?
+   → Mobile App (iOS/Android)
+
+❓ Who is your primary audience?
+   → End Users (consumers/clients)
+
+❓ What style of README do you want?
+   → Business Focused (vision, roadmap, features)
+
+✨ Professional README generated with mobile-specific sections!
+```
+
+## 🎨 README Styles & Templates
+
+### Business Focused
+Perfect for SaaS products and commercial applications:
+- Vision and mission statements
+- Multi-user perspective breakdowns
+- Feature lists organized by user type
+- Professional roadmap and support sections
+
+### Technical Focused
+Ideal for developer tools and libraries:
+- Detailed installation instructions
+- API documentation sections
+- Architecture explanations
+- Comprehensive code examples
+
+### User Focused
+Great for consumer applications:
+- Getting started guides
+- Step-by-step tutorials
+- Screenshot placeholders
+- User support information
+
+### Marketing Focused
+Best for open source projects seeking adoption:
+- Compelling value propositions
+- Visual elements and badges
+- Call-to-action sections
+- Star history and community features
+
+## 🛠️ Supported Project Types
+
+| Technology | Detection | Smart Features |
+|------------|-----------|----------------|
+| **Flutter/Dart** | `pubspec.yaml` | Mobile-specific installation, platform badges |
+| **React** | `package.json` + dependencies | Development server commands, localhost links |
+| **Next.js** | `package.json` + Next dependency | SSR deployment instructions |
+| **Python** | `requirements.txt` | Virtual environment setup |
+| **Node.js** | `package.json` | NPM scripts integration |
+| **Rust** | `Cargo.toml` | Cargo build commands |
+
+## 🗺️ Development Roadmap
+
+### ✅ Completed (v0.1)
+- Smart project analysis for major frameworks
+- Interactive questionnaire system
+- Multiple README templates and styles
+- VSCode integration with context menus
+
+### 🚧 In Progress (v0.2)
+- AI integration for enhanced content generation
+- Custom template creation and sharing
+- Batch README generation for monorepos
+- Live preview with markdown rendering
+
+### 📋 Planned (v0.3+)
+- Integration with popular project management tools
+- Automatic README updates based on code changes
+- Collaborative editing features for teams
+- Multiple language support for international projects
+- VS Code marketplace publication
+
+## 🏗️ Built With
+
+**Core Technologies:**
+- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe development
+- **[VSCode Extension API](https://code.visualstudio.com/api)** - Editor integration
+- **[Webpack](https://webpack.js.org/)** - Module bundling
+
+**Development Tools:**
+- **ESLint** - Code quality and style enforcement
+- **Jest** - Unit testing framework
+- **GitHub Actions** - CI/CD pipeline
+
+## 🤝 Contributing
+
+We welcome contributions from the developer community! AutoReadME is built by developers, for developers.
+
+### Getting Started
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Make** your changes with proper tests
+4. **Commit** your changes (`git commit -m 'Add some amazing feature'`)
+5. **Push** to your branch (`git push origin feature/amazing-feature`)
+6. **Open** a Pull Request
+
+### Development Setup
+```bash
+# Clone your fork
+git clone https://github.com/YOUR_USERNAME/autoreadme-vscode-extension.git
+cd autoreadme-vscode-extension
+
+# Install dependencies
+npm install
+
+# Start development mode
+npm run watch
+
+# Open in VSCode and press F5 to test
+code .
+```
+
+### Contribution Ideas
+- 🎨 **New README templates** for different project types
+- 🔍 **Additional project detection** (Go, PHP, Ruby, etc.)
+- 🌐 **Internationalization** support
+- 📊 **Analytics integration** for README effectiveness
+- 🤖 **AI improvements** for content generation
+
+## 💬 Support & Community
+
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/dhtapp/autoreadme-vscode-extension/issues)
+- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/dhtapp/autoreadme-vscode-extension/discussions)
+- 📧 **Email**: [support@autoreadme.dev](mailto:support@autoreadme.dev)
+- 💬 **Discord**: [Join our community](https://discord.gg/autoreadme) (coming soon)
+
+## 📊 Project Stats
+
+- ⭐ **GitHub Stars**: Growing daily
+- 📥 **Downloads**: Available on VSCode Marketplace soon
+- 🧑‍💻 **Contributors**: Open to the community
+- 📝 **Templates**: 15+ built-in README styles
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### Why MIT?
+We believe in open source and want AutoReadME to be freely used, modified, and distributed. The MIT license ensures maximum compatibility with other projects while protecting contributors.
+
+## 🙏 Acknowledgments
+
+- **VSCode Team** - For the incredible extension ecosystem
+- **Open Source Community** - For inspiration and best practices
+- **README Examples** - Projects like [awesome-readme](https://github.com/matiassingers/awesome-readme) that showed us what great documentation looks like
+- **Beta Testers** - Early adopters who helped shape the user experience
 
 ---
 
-## Following extension guidelines
+<div align="center">
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+**Made with ❤️ by developers who believe great documentation shouldn't be hard**
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+[⭐ Star this repo](../../stargazers) • [🐛 Report Bug](../../issues) • [💡 Request Feature](../../issues) • [📖 Documentation](../../wiki)
 
-## Working with Markdown
+*AutoReadME: Because your project deserves a README as good as your code.*
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+</div>
