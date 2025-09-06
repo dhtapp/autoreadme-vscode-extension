@@ -1,251 +1,190 @@
 # AutoReadME
 
-*AI-powered README generator with guided input for VSCode*
-
-> Transform your project documentation with intelligent README generation that understands your codebase and guides you through creating professional documentation.
+*AI-powered README generator with guided input for VSCode*  
+**Because your project deserves documentation as good as your code.**
 
 [![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
-## ✨ Vision
+---
 
-AutoReadME revolutionizes how developers create project documentation. Instead of staring at a blank README file, our extension provides an intelligent, guided experience that analyzes your project and helps you craft professional documentation that actually gets read.
+## ✨ The Problem with READMEs
 
-## 🎯 Why AutoReadME?
+Most developers know the pain: staring at a blank README file, unsure what to write. The result? Outdated boilerplate, copy-pasted templates, or worse—no documentation at all.
 
-**The Problem:** Most developers either skip writing READMEs or create generic, unhelpful documentation that doesn't serve users or contributors.
+**AutoReadME solves this.** It analyzes your codebase, guides you through targeted questions, and generates professional documentation tailored to your project and audience.
 
-**Our Solution:** An interactive VSCode extension that:
-- 🔍 **Analyzes your project** automatically (detects React, Flutter, Python, etc.)
-- 🎨 **Guides you through creation** with smart questionnaires
-- 📝 **Generates professional READMEs** tailored to your audience and project type
-- 🚀 **Saves hours of writing** while improving documentation quality
+---
+
+## 🎯 Why Choose AutoReadME?
+
+- **🔍 Smart Analysis** – Automatically detects your tech stack, frameworks, and project type
+- **🎨 Guided Creation** – Interactive prompts for audience, style, and detail level  
+- **📝 Professional Templates** – Business, technical, user-focused, or marketing styles
+- **🚀 Time-Saving** – Generate polished documentation in minutes, not hours
+
+---
 
 ## 🏗️ How It Works
 
-### Smart Project Analysis
-AutoReadME automatically detects:
-- **Project Type**: Mobile app, web application, developer tool, API service
-- **Technology Stack**: React, Flutter, Python, Node.js, Rust, and more
-- **Framework Detection**: Next.js, Express, Vue.js, etc.
-- **Configuration Files**: Reads package.json, pubspec.yaml, requirements.txt
+### 1. Intelligent Project Analysis
+AutoReadME scans your project and detects:
+- **Project Type**: Web app, mobile app, API, CLI tool, library
+- **Technology Stack**: React, Flutter, Python, Rust, Go, and more
+- **Frameworks**: Next.js, Express, Vue, Django, FastAPI
+- **Configuration**: `package.json`, `pubspec.yaml`, `requirements.txt`, `Cargo.toml`
 
-### Guided Documentation Creation
-Interactive questionnaire that adapts based on your project:
-1. **Project Context** - Pre-filled from your codebase analysis
-2. **Target Audience** - End users, developers, business stakeholders
-3. **README Style** - Business-focused, technical, user-friendly, or marketing
-4. **Detail Level** - Brief, standard, comprehensive, or professional
+### 2. Guided Documentation Workflow
+Interactive 6-step questionnaire:
+1. **Project Context** (auto-populated from analysis)
+2. **Target Audience** (developers, end users, stakeholders)
+3. **Documentation Style** (business, technical, user, marketing)
+4. **Detail Level** (overview, comprehensive, minimal)
+5. **Features & Vision** (key highlights and goals)
+6. **Roadmap & Contributions** (future plans and community)
 
-### Intelligent Content Generation
-Creates README sections tailored to your choices:
-- **Vision & Mission** statements for business projects
-- **Multi-user perspectives** for SaaS applications
-- **Installation instructions** specific to your tech stack
-- **Usage examples** with proper code snippets
-- **Contributing guidelines** matching your audience
-- **Professional formatting** with badges and visual elements
+### 3. Tailored Professional Output
+Generates contextual sections including:
+- **Vision Statements** – Clear project purpose and goals
+- **Multi-User Perspectives** – Tailored for different audiences
+- **Stack-Specific Instructions** – Accurate setup and usage examples
+- **Contribution Guidelines** – Encourage community involvement
+- **Professional Formatting** – Badges, roadmaps, and visual hierarchy
 
-## 🚀 Installation
+---
 
-### From VSCode Marketplace
-1. Open VSCode
-2. Go to Extensions (`Ctrl+Shift+X` / `Cmd+Shift+X`)
-3. Search for "AutoReadME"
-4. Click **Install**
+## 🚀 Quick Start
 
-### From Source
+### Install from VSCode Marketplace
+1. Open VSCode Extensions (`Ctrl+Shift+X` / `Cmd+Shift+X`)
+2. Search for **"AutoReadME"**
+3. Click **Install**
+
+### Install from Source
 ```bash
-# Clone the repository
 git clone https://github.com/dhtapp/autoreadme-vscode-extension.git
 cd autoreadme-vscode-extension
-
-# Install dependencies
 npm install
-
-# Build the extension
 npm run compile
-
-# Package the extension (optional)
-npm run package
 ```
+
+---
 
 ## 📖 Usage
 
-### Quick Start
 1. **Open your project** in VSCode
 2. **Open Command Palette** (`Ctrl+Shift+P` / `Cmd+Shift+P`)
-3. **Type "Generate README"** and select the command
-4. **Follow the guided prompts** - AutoReadME will analyze your project first
+3. **Run command**: `AutoReadME: Generate README`
+4. **Follow the guided prompts** (project analysis happens automatically)
 5. **Review and save** your generated README
-
-### Alternative Methods
-- **Right-click** any folder in Explorer → "Generate README"
-- **Use the Command Palette** → "AutoReadME: Generate README"
 
 ### Example Workflow
 ```
-🔍 AutoReadME analyzes your Flutter project...
-📱 Detected: Dart/Flutter with mobile app structure
-
-❓ What type of project is this?
-   → Mobile App (iOS/Android)
-
-❓ Who is your primary audience?
-   → End Users (consumers/clients)
-
-❓ What style of README do you want?
-   → Business Focused (vision, roadmap, features)
-
-✨ Professional README generated with mobile-specific sections!
+🔍 Analysis Complete: Flutter mobile app detected
+📱 Project Type: Cross-platform mobile application
+🎯 Target Audience: End users and app store visitors
+🎨 Documentation Style: Business-focused with user benefits
+✨ README generated with mobile-specific installation and features!
 ```
 
-## 🎨 README Styles & Templates
+---
 
-### Business Focused
-Perfect for SaaS products and commercial applications:
-- Vision and mission statements
-- Multi-user perspective breakdowns
-- Feature lists organized by user type
-- Professional roadmap and support sections
+## 🎨 Documentation Styles
 
-### Technical Focused
-Ideal for developer tools and libraries:
-- Detailed installation instructions
-- API documentation sections
-- Architecture explanations
-- Comprehensive code examples
+| Style | Best For | Includes |
+|-------|----------|----------|
+| **Business** | Stakeholders, investors | Vision, mission, user value, roadmap |
+| **Technical** | Developers, contributors | API docs, architecture, code examples |
+| **User-Focused** | End users, tutorials | Getting started, screenshots, support |
+| **Marketing** | Public projects, OSS | Value propositions, community, CTAs |
 
-### User Focused
-Great for consumer applications:
-- Getting started guides
-- Step-by-step tutorials
-- Screenshot placeholders
-- User support information
+---
 
-### Marketing Focused
-Best for open source projects seeking adoption:
-- Compelling value propositions
-- Visual elements and badges
-- Call-to-action sections
-- Star history and community features
+## 🛠️ Supported Technologies
 
-## 🛠️ Supported Project Types
+| Technology | Detection Method | Generated Features |
+|------------|------------------|-------------------|
+| **Flutter** | `pubspec.yaml` | Platform badges, mobile installation |
+| **React/Next.js** | `package.json` | Development server, deployment guides |
+| **Python** | `requirements.txt`, `pyproject.toml` | Virtual environment setup, pip install |
+| **Node.js** | `package.json` | NPM scripts, dependency management |
+| **Rust** | `Cargo.toml` | Cargo commands, crate documentation |
+| **Go** | `go.mod` | Module installation, build instructions |
 
-| Technology | Detection | Smart Features |
-|------------|-----------|----------------|
-| **Flutter/Dart** | `pubspec.yaml` | Mobile-specific installation, platform badges |
-| **React** | `package.json` + dependencies | Development server commands, localhost links |
-| **Next.js** | `package.json` + Next dependency | SSR deployment instructions |
-| **Python** | `requirements.txt` | Virtual environment setup |
-| **Node.js** | `package.json` | NPM scripts integration |
-| **Rust** | `Cargo.toml` | Cargo build commands |
+*More frameworks and languages added regularly*
 
-## 🗺️ Development Roadmap
+---
 
-### ✅ Completed (v0.1)
-- Smart project analysis for major frameworks
-- Interactive questionnaire system
-- Multiple README templates and styles
-- VSCode integration with context menus
+## 🗺️ Roadmap
 
-### 🚧 In Progress (v0.2)
-- AI integration for enhanced content generation
-- Custom template creation and sharing
-- Batch README generation for monorepos
-- Live preview with markdown rendering
+### ✅ v0.1 - Foundation (Current)
+- Smart project analysis and detection
+- Interactive questionnaire workflow  
+- Multiple template styles
+- Full VSCode integration
 
-### 📋 Planned (v0.3+)
-- Integration with popular project management tools
-- Automatic README updates based on code changes
-- Collaborative editing features for teams
-- Multiple language support for international projects
-- VS Code marketplace publication
+### 🚧 v0.2 - Enhanced Intelligence (In Progress)
+- AI-powered content suggestions
+- Custom template creation
+- Monorepo and multi-project support
+- Live markdown preview
+
+### 📋 v0.3+ - Advanced Features
+- Auto-updating READMEs from code changes
+- Team collaboration and shared templates
+- Multi-language documentation support
+- VSCode Marketplace publication
+
+---
 
 ## 🏗️ Built With
 
-**Core Technologies:**
-- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe development
-- **[VSCode Extension API](https://code.visualstudio.com/api)** - Editor integration
-- **[Webpack](https://webpack.js.org/)** - Module bundling
+- **[TypeScript](https://www.typescriptlang.org/)** – Type-safe development
+- **[VSCode Extension API](https://code.visualstudio.com/api)** – Editor integration
+- **[Webpack](https://webpack.js.org/)** – Module bundling
+- **[ESLint](https://eslint.org/) + [Jest](https://jestjs.io/)** – Code quality and testing
+- **[GitHub Actions](https://github.com/features/actions)** – CI/CD pipeline
 
-**Development Tools:**
-- **ESLint** - Code quality and style enforcement
-- **Jest** - Unit testing framework
-- **GitHub Actions** - CI/CD pipeline
+---
 
 ## 🤝 Contributing
 
-We welcome contributions from the developer community! AutoReadME is built by developers, for developers.
+We welcome contributions from developers who believe great documentation shouldn't be hard to create!
 
-### Getting Started
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Make** your changes with proper tests
-4. **Commit** your changes (`git commit -m 'Add some amazing feature'`)
-5. **Push** to your branch (`git push origin feature/amazing-feature`)
-6. **Open** a Pull Request
+**How to Contribute:**
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes and test thoroughly
+4. Submit a pull request with a clear description
 
-### Development Setup
-```bash
-# Clone your fork
-git clone https://github.com/YOUR_USERNAME/autoreadme-vscode-extension.git
-cd autoreadme-vscode-extension
+**Ideas for Contributors:**
+- New documentation templates and styles
+- Additional programming language detection
+- AI-powered content improvements
+- Internationalization (i18n) support
 
-# Install dependencies
-npm install
-
-# Start development mode
-npm run watch
-
-# Open in VSCode and press F5 to test
-code .
-```
-
-### Contribution Ideas
-- 🎨 **New README templates** for different project types
-- 🔍 **Additional project detection** (Go, PHP, Ruby, etc.)
-- 🌐 **Internationalization** support
-- 📊 **Analytics integration** for README effectiveness
-- 🤖 **AI improvements** for content generation
+---
 
 ## 💬 Support & Community
 
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/dhtapp/autoreadme-vscode-extension/issues)
-- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/dhtapp/autoreadme-vscode-extension/discussions)
-- 📧 **Email**: [support@autoreadme.dev](mailto:support@autoreadme.dev)
-- 💬 **Discord**: [Join our community](https://discord.gg/autoreadme) (coming soon)
+- **🐛 [Report Issues](https://github.com/dhtapp/autoreadme-vscode-extension/issues)**
+- **💡 [Request Features](https://github.com/dhtapp/autoreadme-vscode-extension/discussions)**
+- **📧 Email**: support@autoreadme.dev
+- **💬 Discord**: Coming soon!
 
-## 📊 Project Stats
-
-- ⭐ **GitHub Stars**: Growing daily
-- 📥 **Downloads**: Available on VSCode Marketplace soon
-- 🧑‍💻 **Contributors**: Open to the community
-- 📝 **Templates**: 15+ built-in README styles
+---
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Why MIT?
-We believe in open source and want AutoReadME to be freely used, modified, and distributed. The MIT license ensures maximum compatibility with other projects while protecting contributors.
-
-## 🙏 Acknowledgments
-
-- **VSCode Team** - For the incredible extension ecosystem
-- **Open Source Community** - For inspiration and best practices
-- **README Examples** - Projects like [awesome-readme](https://github.com/matiassingers/awesome-readme) that showed us what great documentation looks like
-- **Beta Testers** - Early adopters who helped shape the user experience
-
 ---
 
 <div align="center">
 
-**Made with ❤️ by developers who believe great documentation shouldn't be hard**
+**Made with ❤️ by developers who believe great documentation shouldn't be hard.**
 
-[⭐ Star this repo](../../stargazers) • [🐛 Report Bug](../../issues) • [💡 Request Feature](../../issues) • [📖 Documentation](../../wiki)
-
-*AutoReadME: Because your project deserves a README as good as your code.*
+[⭐ Star this repo](https://github.com/dhtapp/autoreadme-vscode-extension) • [🐛 Report Bug](https://github.com/dhtapp/autoreadme-vscode-extension/issues) • [💡 Request Feature](https://github.com/dhtapp/autoreadme-vscode-extension/discussions)
 
 </div>
